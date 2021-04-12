@@ -22,6 +22,7 @@
       <ion-label position="floating" color="primary">Name</ion-label>
       <ion-input type="text" formControlName="name"></ion-input>
     </ion-item>
+    
     <div class="validation-errors">
       <ng-container *ngFor="let validation of validation_messages.name">
         <div class="error-message" *ngIf="validations_form.get('name').hasError(validation.type) && (validations_form.get('name').dirty || validations_form.get('name').touched)">
@@ -34,6 +35,7 @@
       <ion-label position="floating" color="primary">Last name</ion-label>
       <ion-input type="text" formControlName="lastname"></ion-input>
     </ion-item>
+    
     <div class="validation-errors">
       <ng-container *ngFor="let validation of validation_messages.lastname">
         <div class="error-message" *ngIf="validations_form.get('lastname').hasError(validation.type) && (validations_form.get('lastname').dirty || validations_form.get('lastname').touched)">
@@ -46,6 +48,7 @@
       <ion-label position="floating" color="primary">Email</ion-label>
       <ion-input type="text" formControlName="email"></ion-input>
     </ion-item>
+    
     <div class="validation-errors">
       <ng-container *ngFor="let validation of validation_messages.email">
         <div class="error-message" *ngIf="validations_form.get('email').hasError(validation.type) && (validations_form.get('email').dirty || validations_form.get('email').touched)">
@@ -88,6 +91,7 @@
         <ion-label position="floating" color="primary">Password</ion-label>
         <ion-input type="password" formControlName="password"></ion-input>
       </ion-item>
+      
       <div class="validation-errors">
         <ng-container *ngFor="let validation of validation_messages.password">
           <div class="error-message" *ngIf="validations_form.get('matching_passwords').get('password').hasError(validation.type) && (validations_form.get('matching_passwords').get('password').dirty || validations_form.get('matching_passwords').get('password').touched)">
@@ -100,6 +104,7 @@
         <ion-label position="floating" color="primary">Confirm Password</ion-label>
         <ion-input type="password" formControlName="confirm_password"></ion-input>
       </ion-item>
+      
       <div class="validation-errors">
         <ng-container *ngFor="let validation of validation_messages.confirm_password">
           <div class="error-message" *ngIf="validations_form.get('matching_passwords').get('confirm_password').hasError(validation.type) && (validations_form.get('matching_passwords').get('confirm_password').dirty || validations_form.get('matching_passwords').get('confirm_password').touched)">
@@ -121,6 +126,7 @@
       <ion-label color="primary">I accept terms and conditions</ion-label>
       <ion-checkbox color="primary" formControlName="terms"></ion-checkbox>
     </ion-item>
+    
     <div class="validation-errors">
       <ng-container *ngFor="let validation of validation_messages.terms">
         <div class="error-message" *ngIf="validations_form.get('terms').hasError(validation.type) && (validations_form.get('terms').dirty || validations_form.get('terms').touched)">
